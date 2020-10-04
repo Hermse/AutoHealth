@@ -1,10 +1,16 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 stu_number = ' '     #学号
 stu_psword = ' '       #密码
 driver = webdriver.Edge(" ")           #Edge浏览器驱动
 #https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads    Edge浏览器驱动下载地址
 
+
+
+
+opt = Options()
+# opt.add_argument('--headless')
 driver.get("https://app.ncepu.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.ncepu.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex")
 
 elem = driver.find_element_by_css_selector("input[type=\"text\"]")
