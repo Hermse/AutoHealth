@@ -10,7 +10,7 @@ driver = webdriver.Edge(" ")           #Edge浏览器驱动
 
 
 opt = Options()
-# opt.add_argument('--headless')
+# opt.add_argument('--headless')    #想要静默运行，则取消本代码注释
 driver.get("https://app.ncepu.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.ncepu.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex")
 
 elem = driver.find_element_by_css_selector("input[type=\"text\"]")
